@@ -2,6 +2,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width:100%;
+    height:100%;
+    flex-wrap:wrap;
+}
+
+.friends__plus{
+    width:100%;
+}
+
+
+.friends__plus-title{
+    width:100%;
+}
+
+
+.chat .friends__friend{
+    margin-bottom: 25px;
 }
 
 .friend .friend__avatar{
@@ -17,6 +34,26 @@
     width: 60px;
 }
 
+/*for 4 person, we need to adjust margin-right start*/
+
+.friend__column  .friend__column44 {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-wrap:wrap;
+    margin-right: 18px;
+}
+
+.friend__column44 .xs-avatar{
+    width: 26px;
+    height: 26px;
+    margin-left: 2px;
+    border-radius: 8px;
+}
+
+/*for 4 person, I needed to adjust end*/
+
+
 .friend .friend__column{
     display: flex;
     align-items: center;
@@ -25,6 +62,7 @@
 .friend__column .friend__avatar{
     margin-right: 15px;
 }
+
 
 .friend__content .friend__name{
     display: block;
@@ -55,3 +93,54 @@
     background-color: #f5f5f5;
     border-radius: 5px;
 }
+
+
+/*add friends start*/
+
+.friends__list .friend,
+.friends__plus .friend{
+    margin-bottom: 15px;
+}
+
+.friends__plus .friend:last-child{
+    margin-bottom:0px;
+}
+
+/*add friends end*/
+
+
+/*add chat__badge*/
+
+.friend__column .chat__timestamp{
+    position: relative;
+}
+
+.chat__timestamp .chat__badge{
+    position: absolute;
+    top: 15px;
+    right: 8px;
+    font-size: 10px;
+    color: white;
+    background-color: red;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.chat__timestamp .chat__badge:hover{
+    animation: turning 0.2s linear infinite;
+}
+
+@keyframes turning{
+    0%{
+        transform: none;
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
+/*add chat__badge end*/
