@@ -218,22 +218,12 @@ animation: sentanim .5s ease-out forwards;
 /* chat img adding start*/
 
 .incoming-message .scean-img{
-  width:100%;
+  width: 100%;
   border-radius: 20px 20px 20px 0px;
   border: 2px solid #7b4397;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
  rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
 }
-
-.sent-message .scean-img{
-  width:100%;
-  border-radius: 20px 20px 0px 20px;
-  border: 2px solid #0072ff;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
- rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
-}
-
-
 /* chat img adding end*/
 
 
